@@ -1,0 +1,16 @@
+<html>
+<head>
+  <title>
+    {{page_title}}
+  </title>
+</head>
+<body>
+  <h1>Feedback</h1>
+  {% for f in feedbacks %}
+  Name: {{f.user}}<br/>
+  Title: {{f.title}}<br/>
+  Feedback: <br/>
+  <pre>{{f.body}}</pre>
+  {% endfor %}
+</body>
+</html>
